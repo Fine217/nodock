@@ -9,7 +9,7 @@ services:
                 - NODE_VERSION=latest
                 - PROJECT_PATH=/opt/app/
                 - NODE_ENV=production
-                - YARN=false
+                - YARN=true
         volumes:
             - ../:/opt/app
         entrypoint: run-nodock "npm run start"
